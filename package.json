@@ -1,0 +1,38 @@
+{
+  "name": "sol-durable-nonce",
+  "version": "1.0.0",
+  "description": "create, set, and get durable nonce on Solana Network",
+  "repository": "https://github.com/crypt0miester/sol-durable-nonce",
+  "author": "CryptoMiester",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.91.1"
+  },
+  "devDependencies": {
+    "bs58": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.4.2"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "files": [
+    "/dist"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "clean": "rm -rf dist",
+    "build": "yarn clean && yarn build:cjs; yarn build:esm",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:cjs:watch": "concurrently \"tsc --project tsconfig.cjs.json --watch\"",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:esm:watch": "concurrently \"tsc --project tsconfig.esm.json --watch\""
+  }
+}

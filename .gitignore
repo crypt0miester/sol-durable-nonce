@@ -1,0 +1,32 @@
+# IDE & OS specific
+.DS_Store
+.idea
+
+# Logs
+logs
+*.log
+
+# Dependencies
+node_modules/
+dist/
+.yarn
+
+# Coverage
+coverage
+.nyc_output
+
+# Generated docs
+doc
+
+# VIM swap files
+*.sw*
+
+# Flow
+module.flow.js
+
+# TypeScript
+declarations
+tests_local/
+script/*
+
+durableNonceConfig.json
