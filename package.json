@@ -2,7 +2,10 @@
   "name": "sol-durable-nonce",
   "version": "1.0.0",
   "description": "create, set, and get durable nonce on Solana Network",
-  "repository": "https://github.com/crypt0miester/sol-durable-nonce",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crypt0miester/sol-durable-nonce.git"
+  },
   "author": "CryptoMiester",
   "license": "MIT",
   "dependencies": {

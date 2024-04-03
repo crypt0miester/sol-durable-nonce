@@ -5,7 +5,8 @@
       "target": "ES6",
       "module": "CommonJS",
       "outDir": "dist/cjs",
-      "declarationDir": "dist/types"
+      "declarationDir": "dist/types",
+      "sourceMap": true,
     },
     "rootDir": "./src",
     "include": ["src/**/*.ts"],
